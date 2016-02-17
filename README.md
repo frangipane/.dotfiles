@@ -1,9 +1,12 @@
 ## .files 
 
-These are my dotfiles, i.e. configurations of shell and other
-programs, targeted for Ubuntu (I'm on Linux Mint 17.3 Cinnamon 64-bit).
-The setup and workflow is covered in detail in
+These are dotfiles, i.e. configurations of shell and other programs,
+to set up a basic data science working environment.  The setup and
+workflow is covered in detail in
 [this blog post](http://efavdb.com/dotfiles).
+
+Tested on Linux Mint 17.3 Cinnamon 64-bit and Ubuntu 14.04 (Trusty
+Tahr) 32-bit.
 
 ## Warning
 
@@ -60,11 +63,24 @@ On a fresh installation of Ubuntu, first install git:
 
 Then clone this repo with Git
 
-`git clone https://github.com/frangipane/.dotfiles.git`
+`git clone https://github.com/efavdb/dotfiles.git`
 
-Then run installation script (script can be run from anywhere)
+Then run the installation script:
 
-`source .dotfiles/install.sh`
+`source dotfiles/install.sh`
+
+
+## Tips
+
+- Type `conda list` in your shell to check if the miniconda path has
+  been prepended to the PATH variable.  If the command is not
+  recognized, try logging out and back into your system in order for
+  the changes to .profile to take effect.
+- Type `conda list` to check that all the packages were successfully
+  installed by `conda.sh`.  If they weren't (e.g. due to a failed
+  internet connection), you can run `install.sh` again.  Note, the
+  list output by `conda list` should look a lot longer than that in
+  `conda.sh` because of automatically installed dependencies.
 
 
 ## Resources
@@ -72,5 +88,6 @@ Then run installation script (script can be run from anywhere)
 * [Dotfiles for peace of mind](http://efavdb.com/dotfiles) -- step-by-step guide through this repo
 * [Getting started with dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.7l2hnwca2) -- dotfiles how-to
 * https://github.com/webpro/dotfiles -- inspiration for structuring dotfiles and automating installation
-
-
+* [My Python Environment Workflow with Conda](http://stiglerdiet.com/blog/2015/Nov/24/my-python-environment-workflow-with-conda/)
+  -- Tim Hopper's workflow, implemented in this repo
+* [Emacs repo cloned by this setup](https://github.com/frangipane/emacs)
