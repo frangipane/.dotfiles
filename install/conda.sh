@@ -12,7 +12,7 @@ packages=(
     beautifulsoup4
     jedi   # for emacs
     flake8 # for emacs
-    PIL # needed for some scipy modules
+    #PIL # needed for some scipy modules, not compatible with python3
 )
 
 for item in ${packages[*]}; do
