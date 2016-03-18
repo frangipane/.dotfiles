@@ -17,3 +17,6 @@ vagrant reload
 
 ## (optional) add vagrant box running ubuntu 12.04
 # vagrant box add precise32 http://files.vagrantup.com/precise32.box
+
+## (optional) add vagrant box running ubuntu 14.04, with Caffe deep learning framework pre-installed
+# vagrant box add malthejorgensen/caffe-deeplearning
