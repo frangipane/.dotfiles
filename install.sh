@@ -29,4 +29,4 @@ ln -sfv "$DOTFILES_DIR/runcom/.bashrc" ~
 . "$DOTFILES_DIR/install/install-miniconda.sh"
 . "$DOTFILES_DIR/install/conda.sh"
 . "$DOTFILES_DIR/install/git.sh"
-
+. "$DOTFILES_DIR/install/install-vagrant.sh"
