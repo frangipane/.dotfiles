@@ -28,10 +28,11 @@ deb-src http://security.ubuntu.com/ubuntu/ $CODENAME_UBUNTU-security main restri
 deb-src http://archive.canonical.com/ubuntu/ $CODENAME_UBUNTU partner
 EOF
 
+    ## add virtualbox repo to receive future updates through software updater/package manager
+    sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $CODENAME_UBUNTU contrib" > "$APT_PATH/virtualbox.list"'
+
 fi
 
-## add virtualbox repo
-echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib" > "$APT_PATH/virtualbox.list"
 
 ## install packages
 
