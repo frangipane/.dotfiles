@@ -31,6 +31,8 @@ EOF
     ## add virtualbox repo to receive future updates through software updater/package manager
     sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $CODENAME_UBUNTU contrib" > "$APT_PATH/virtualbox.list"'
 
+    ## Also download and insert the keyring so that Ubuntu trusts the package from that repository:
+    wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 fi
 
 
@@ -43,6 +45,8 @@ apps=(
     pandoc
     automake
     texlive-full
+    virtualbox-5.0
+    dkms # ensure that the VirtualBox host kernel modules (vboxdrv, vboxnetflt and vboxnetadp) are properly updated if the linux kernel version changes during the next apt-get upgrade
 )
 
 sudo apt-get update
