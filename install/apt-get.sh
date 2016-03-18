@@ -28,9 +28,10 @@ deb-src http://security.ubuntu.com/ubuntu/ $CODENAME_UBUNTU-security main restri
 deb-src http://archive.canonical.com/ubuntu/ $CODENAME_UBUNTU partner
 EOF
 
-    ## to do: add repo for virtualbox to sources.list.d
 fi
 
+## add virtualbox repo
+echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib" > "$APT_PATH/virtualbox.list"
 
 ## install packages
 
