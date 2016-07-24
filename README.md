@@ -55,6 +55,8 @@ packages.
 `install-miniconda.sh`
 - install miniconda3
 
+`install-docker.sh`
+- install docker
 
 ## Install
 
