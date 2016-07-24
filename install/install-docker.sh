@@ -17,8 +17,8 @@ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58
 
 ## Add entry for Ubuntu Trusty sources in /etc/apt/sources.list.d/docker.list
 APT_PATH="/etc/apt/sources.list.d"
-if [ ! -f $APT_PATH/docker.list ]; then
-    sudo sh -c 'echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > "$APT_PATH/docker.list"'
+if [ ! -f "$APT_PATH/docker.list" ]; then
+   sudo sh -c 'echo "deb https://apt.dockerproject.org/repo ubuntu-trusty main" > "$APT_PATH/docker.list"'
 fi
 
 ## Update the APT package index

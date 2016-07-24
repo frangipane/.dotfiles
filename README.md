@@ -56,7 +56,8 @@ packages.
 - install miniconda3
 
 `install-docker.sh`
-- install docker
+- install docker 
+Bash bug?  code isn't creating /etc/apt/sources.list.d/docker.list, so side-stepping by executing the command manually in terminal
 
 ## Install
 
