@@ -1,5 +1,5 @@
 ## If docker is already installed, skip installation
-sudo service docker start &> /dev/null
+docker version &> /dev/null
 [ $? -eq 0 ] && return
 
 ## https://docs.docker.com/engine/installation/linux/ubuntulinux/
