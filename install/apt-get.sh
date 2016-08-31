@@ -47,6 +47,7 @@ apps=(
     texlive-full
     virtualbox-5.0
     dkms # ensure that the VirtualBox host kernel modules (vboxdrv, vboxnetflt and vboxnetadp) are properly updated if the linux kernel version changes during the next apt-get upgrade
+    dropbox
 )
 
 sudo apt-get update
