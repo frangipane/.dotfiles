@@ -4,7 +4,6 @@ which psql &> /dev/null
 
 PGBASE="/usr/local/postgresql"
 PGDATA="$PGBASE/data"
-USR="cathy"
 
 if [ ! -d $PGBASE ]; then
     ## create parent directory of data directory, where
@@ -13,8 +12,9 @@ if [ ! -d $PGBASE ]; then
     sudo chmod 700 $PGBASE
         
     ## give user permission to write to directory
-    sudo chown $USR $PGBASE
+    sudo chown $USER $PGBASE
 
-    ## initialize the database as user postgres
+    ## initialize the database as user
+    ## "superuser" defaults to same name as operating system user
     initdb -D $PGDATA
 fi
