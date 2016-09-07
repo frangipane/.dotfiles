@@ -1,4 +1,4 @@
 # shortcuts
 
-alias pg-start="pg_ctl -D $PGDATA -l $PGDATA/server.log startx"
+alias pg-start="pg_ctl -D $PGDATA -l $PGDATA/server.log start"
 alias pg-stop="pg_ctl -D $PGDATA stop -m fast"
