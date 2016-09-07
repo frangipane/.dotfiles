@@ -2,3 +2,6 @@
 ## entering a directory containing .env file)
 
 [ -f /opt/autoenv/activate.sh ] && . /opt/autoenv/activate.sh
+
+## default postgres server (aka database cluster) directory
+export PGDATA="/usr/local/postgresql/data"
