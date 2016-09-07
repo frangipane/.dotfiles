@@ -33,6 +33,7 @@ packages.
 - automake - tool for generating Makefile.in files (required by
   auctex, Emacs plugin)
 - texlive-full - LaTeX (required by auctex, Emacs plugin)
+- dropbox
 
 `conda.sh`
 - python numeric/scientific computing/plotting libraries: matplotlib,
@@ -59,6 +60,10 @@ packages.
 - install docker 
 Bash bug?  code isn't creating /etc/apt/sources.list.d/docker.list, so side-stepping by executing the command manually in terminal
 
+`install-postgres.sh`
+- install postgresql via conda
+- initialize database directory (i.e. "database cluster") in `/usr/local/postgresql/data`
+
 ## Install
 
 On a fresh installation of Ubuntu, first install git:
@@ -66,7 +71,7 @@ On a fresh installation of Ubuntu, first install git:
 
 Then clone this repo with Git
 
-`git clone https://github.com/efavdb/dotfiles.git`
+`git clone https://github.com/frangipane/.dotfiles.git`
 
 Then run the installation script:
 
